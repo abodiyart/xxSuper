@@ -37,7 +37,7 @@ import random
 APP_ID =15179868
 APP_HASH='5eed1d89e639551bd74d736037ebd4f9'
 #bot_token='6525713076:AAHnKy7bq69iS-hmJ2ZhdxX15MKXrujoP9A'
-abbas=TelegramClient('bot', APP_ID, APP_HASH)
+=TelegramClient('bot', APP_ID, APP_HASH)
 abbas.start()
 a = requests.session()
 bot_username = '@eeobot'
@@ -1189,96 +1189,96 @@ async def OwnerStart(event):
 **""")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.زر (.*) (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.زر (.*) (.*)'))
 async def OwnerStart(event):
     userbt = event.pattern_match.group(1) 
     bt = int(event.pattern_match.group(2))
     sender = await event.get_sender()
     if sender.id == onerabbas_id :
-     send = await abbas.send_message(userbt, '/start')
+     send = await diyar.send_message(userbt, '/start')
      sleep(2)
-    msg1 = await abbas.get_messages(userbt, limit=1)
+    msg1 = await diyar.get_messages(userbt, limit=1)
     await msg1[0].click(bt)
-    await abbas.send_message(event.chat_id, f"**❈ حسناً قمت بالنقر على الزر رقم {bt}**")
+    await diyar.send_message(event.chat_id, f"**❈ حسناً قمت بالنقر على الزر رقم {bt}**")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.جلب (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.جلب (.*)'))
 async def OwnerStart(event):
     userbott = event.pattern_match.group(1)
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
-        sing = await abbas.send_message(event.chat_id, f"**❈ حسناً سوف اقوم بتحويل اخر رسالة\n❈ من المستخدم {userbott}**")
-        msgs = await abbas.get_messages(userbott, limit=1)
+        sing = await diyar.send_message(event.chat_id, f"**❈ حسناً سوف اقوم بتحويل اخر رسالة\n❈ من المستخدم {userbott}**")
+        msgs = await diyar.get_messages(userbott, limit=1)
         if msgs:
             await msgs[0].forward_to(onerabbas_id)
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.انضمام'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.انضمام'))
 async def OwnerStart(event):
     sender = await event.get_sender()
 
     if sender.id == onerabbas_id:
-        send = await abbas.send_message(event.chat_id, "**جاري الانضمام التلقائي للقنوات**")
-        joinq = await abbas(JoinChannelRequest('d3boot_7'))
-        joinw = await abbas(JoinChannelRequest('Fvvvv'))
-        joine = await abbas(JoinChannelRequest('DzDDDD'))
-        joinr = await abbas(JoinChannelRequest('botbillion'))
-        joint = await abbas(JoinChannelRequest('zzzzzz1'))
-        joiny = await abbas(JoinChannelRequest('zzzzzz'))
-        joini = await abbas(JoinChannelRequest('zz_MX'))
-        joino = await abbas(JoinChannelRequest('lI7777Il'))
-        joinp = await abbas(JoinChannelRequest('KTTTT'))
-        joina = await abbas(JoinChannelRequest('RRXFR'))
-        joing = await abbas(JoinChannelRequest('ASIABUY'))
-        joinf = await abbas(JoinChannelRequest('BOBBB'))
-        joind = await abbas(JoinChannelRequest('CHMU4'))
-        joins = await abbas(JoinChannelRequest('SISlSISS'))
-        joinm = await abbas(JoinChannelRequest('rshaqchi'))
-        joinn = await abbas(JoinChannelRequest('rHyber'))
-        joinb = await abbas(JoinChannelRequest('ihyber'))
-        joinv = await abbas(JoinChannelRequest('fff22'))
-        joinc = await abbas(JoinChannelRequest('S_A_S_26'))
-        joinx = await abbas(JoinChannelRequest('zzzzzp8'))
-        joinz = await abbas(JoinChannelRequest('V_I_O_T'))
-        join1 = await abbas(JoinChannelRequest('q2qqqq'))
-        sendd = await abbas.send_message(event.chat_id, "**تـم الانضمام في القنوات**") 
+        send = await diyar.send_message(event.chat_id, "**جاري الانضمام التلقائي للقنوات**")
+        joinq = await diyar(JoinChannelRequest('d3boot_7'))
+        joinw = await diyar(JoinChannelRequest('Fvvvv'))
+        joine = await diyar(JoinChannelRequest('DzDDDD'))
+        joinr = await diyar(JoinChannelRequest('botbillion'))
+        joint = await diyar(JoinChannelRequest('zzzzzz1'))
+        joiny = await diyar(JoinChannelRequest('zzzzzz'))
+        joini = await diyar(JoinChannelRequest('zz_MX'))
+        joino = await diyar(JoinChannelRequest('lI7777Il'))
+        joinp = await diyar(JoinChannelRequest('KTTTT'))
+        joina = await diyar(JoinChannelRequest('RRXFR'))
+        joing = await diyar(JoinChannelRequest('ASIABUY'))
+        joinf = await diyar(JoinChannelRequest('BOBBB'))
+        joind = await diyar(JoinChannelRequest('CHMU4'))
+        joins = await diyar(JoinChannelRequest('SISlSISS'))
+        joinm = await diyar(JoinChannelRequest('rshaqchi'))
+        joinn = await diyar(JoinChannelRequest('rHyber'))
+        joinb = await diyar(JoinChannelRequest('ihyber'))
+        joinv = await diyar(JoinChannelRequest('fff22'))
+        joinc = await diyar(JoinChannelRequest('S_A_S_26'))
+        joinx = await diyar(JoinChannelRequest('zzzzzp8'))
+        joinz = await diyar(JoinChannelRequest('V_I_O_T'))
+        join1 = await diyar(JoinChannelRequest('q2qqqq'))
+        sendd = await diyar.send_message(event.chat_id, "**تـم الانضمام في القنوات**") 
 
 
       
-@abbas.on(events.NewMessage(outgoing=False, pattern='.انضم (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.انضم (.*)'))
 async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
 
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
-        sendy = await abbas.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
-        joinch = await abbas(JoinChannelRequest(usercht))
-        sendy = await abbas.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
-@abbas.on(events.NewMessage(outgoing=False, pattern='.غادر (.*)'))
+        sendy = await diyar.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
+        joinch = await diyar(JoinChannelRequest(usercht))
+        sendy = await diyar.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
+@diyar.on(events.NewMessage(outgoing=False, pattern='.غادر (.*)'))
 async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
-        sendy = await abbas.send_message(event.chat_id,f"**جاري مغادرة القناة  @{usercht}**")
-        joinch = await abbas(LeaveChannelRequest(usercht))
-        sendy = await abbas.send_message(event.chat_id,f"**تم مغادرة القناة @{usercht}**")
-@abbas.on(events.NewMessage(outgoing=False, pattern='.صوت (.*) (.*)'))
+        sendy = await diyar.send_message(event.chat_id,f"**جاري مغادرة القناة  @{usercht}**")
+        joinch = await diyar(LeaveChannelRequest(usercht))
+        sendy = await diyar.send_message(event.chat_id,f"**تم مغادرة القناة @{usercht}**")
+@diyar.on(events.NewMessage(outgoing=False, pattern='.صوت (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
         chn = event.pattern_match.group(1)
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
-        wait = await abbas.send_message(onerabbas_id,'**⚝ حسناً سوف اقوم بالانضمام والتصويت**')
-        haso = await abbas.get_entity(chn)
-        join = await abbas(JoinChannelRequest(chn))
-        joion = await abbas(JoinChannelRequest('Sourcediyar'))
-        somy = await abbas.get_messages(chn, limit=nu)
+        wait = await diyar.send_message(onerabbas_id,'**⚝ حسناً سوف اقوم بالانضمام والتصويت**')
+        haso = await diyar.get_entity(chn)
+        join = await diyar(JoinChannelRequest(chn))
+        joion = await diyar(JoinChannelRequest('Sourcediyar'))
+        somy = await diyar.get_messages(chn, limit=nu)
         await somy[nuu].click(0)
         sleep(1)
-        await abbas.send_message(onerabbas_id,'**⚝ قمت بالانضمام والتصويت بنجاح**')
-onerabbas_ids = 6066647930
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تصويت (.*) (.*)'))
+        await diyar.send_message(onerabbas_id,'**⚝ قمت بالانضمام والتصويت بنجاح**')
+onerabbas_ids = 1076515841
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تصويت (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerabbas_ids:
@@ -1286,15 +1286,15 @@ async def OwnerStart(event):
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
         wait = await event.reply('**⚝ حسناً سوف اقوم بالانضمام والتصويت**')
-        haso = await abbas.get_entity(chn)
-        join = await abbas(JoinChannelRequest(chn))
-        joion = await abbas(JoinChannelRequest('Sourcediyar'))
-        somy = await abbas.get_messages(chn, limit=nu)
+        haso = await diyar.get_entity(chn)
+        join = await diyar(JoinChannelRequest(chn))
+        joion = await diyar(JoinChannelRequest('Sourcediyar'))
+        somy = await diyar.get_messages(chn, limit=nu)
         await somy[nuu].click(0)
         sleep(1)
         await event.reply('**⚝ قمت بالانضمام والتصويت بنجاح**')
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.ترتيب'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.ترتيب'))
 async def get_account_info(event):
     sender = await event.get_sender()
     
@@ -1314,7 +1314,7 @@ async def get_account_info(event):
         else:
             await event.respond("لم أتمكن من استرداد معلومات الحساب.")
 #حظر البوت 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.حظر(.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.حظر(.*)'))
 async def block_user(event):
     sender = await event.get_sender()
     
@@ -1328,7 +1328,7 @@ async def block_user(event):
             await event.reply(f"حدث خطأ أثناء حظر المستخدم: {str(e)}")
             
             
-@abbas.on(events.NewMessage(outgoing=False, pattern='.الغاء حظر(.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.الغاء حظر(.*)'))
 async def unblock_user(event):
     sender = await event.get_sender()
     
@@ -1348,7 +1348,7 @@ async def unblock_user(event):
 
 DevDiYaR = [1076515841]
 
-@abbas.on(events.NewMessage(incoming=True))
+@diyar.on(events.NewMessage(incoming=True))
 async def Abbas(event):
     if event.message.message.startswith("تمويل") and event.sender_id in DevDiYaR:
         message = event.message
