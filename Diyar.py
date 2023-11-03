@@ -224,7 +224,7 @@ async def OwnerStart(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username)
+        channel_entity = await diyar.get_entity(bot_username)
         await diyar.send_message(bot_username, '/start')
         await asyncio.sleep(4)
         msg0 = await diyar.get_messages(bot_username, limit=1)
@@ -238,7 +238,7 @@ async def OwnerStart(event):
             list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
@@ -261,11 +261,11 @@ async def OwnerStart(event):
 @diyar.on(events.NewMessage(outgoing=False, pattern='.الجوكر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username1)
+        channel_entity = await diyar.get_entity(bot_username1)
         await diyar.send_message(bot_username1, '/start')
         await asyncio.sleep(4)
         msg0 = await diyar.get_messages(bot_username1, limit=1)
@@ -302,7 +302,7 @@ async def OwnerStart(event):
 @diyar.on(events.NewMessage(outgoing=False, pattern='.العقاب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
@@ -392,7 +392,7 @@ async def OwnerStart(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username4)
+        channel_entity = await diyar.get_entity(bot_username4)
         await diyar.send_message(bot_username4, '/start')
         await asyncio.sleep(4)
         msg0 = await diyar.get_messages(bot_username4, limit=1)
@@ -475,7 +475,7 @@ async def OwnerStart(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username6)
+        channel_entity = await diyar.get_entity(bot_username6)
         await diyar.send_message(bot_username6, '/start')
         await asyncio.sleep(4)
         msg0 = await diyar.get_messages(bot_username6, limit=1)
@@ -632,7 +632,7 @@ async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username2)
+        channel_entity = await diyar.get_entity(bot_username2)
         await diyar.send_message(bot_username2, '/start')
         await asyncio.sleep(4)
         msg0 = await diyar.get_messages(bot_username2, limit=1)
@@ -709,7 +709,7 @@ async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
         joinu = await diyar(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username4)
+        channel_entity = await diyar.get_entity(bot_username4)
         await diyar.send_message(bot_username4, '/start')
         await asyncio.sleep(4)
         msg0 = await diyar.get_messages(bot_username4, limit=1)
@@ -836,7 +836,7 @@ async def OwnerStart(event):
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
+    if sender.id == onerdiyar_id :
      send = await diyar.send_message(bot_username, '/start')
      sleep(2)
     msg1 = await diyar.get_messages(bot_username, limit=1)
@@ -845,7 +845,7 @@ async def OwnerStart(event):
     await diyar.send_message(bot_username, pt)
     sleep(4)
     msg = await diyar.get_messages(bot_username, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 
 
 
@@ -862,7 +862,7 @@ async def OwnerStart(event):
     await diyar.send_message(bot_username1, pt)
     sleep(4)
     msg = await diyar.get_messages(bot_username1, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 
 
 @diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل العقاب (.*)'))
@@ -908,7 +908,7 @@ async def OwnerStart(event):
     await diyar.send_message(bot_username4, pt)
     sleep(4)
     msg = await diyar.get_messages(bot_username4, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 
 @diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل اسيا (.*)'))
 async def OwnerStart(event):
@@ -1071,7 +1071,7 @@ async def OwnerStart(event):
     await msg1[0].click(5)
     sleep(2)
     msg = await diyar.get_messages(bot_username, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 @diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات الجوكر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -1082,7 +1082,7 @@ async def OwnerStart(event):
     await msg1[0].click(5)
     sleep(2)
     msg = await diyar.get_messages(bot_username1, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 @diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات العقاب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -1093,7 +1093,7 @@ async def OwnerStart(event):
     await msg1[0].click(5)
     sleep(2)
     msg = await diyar.get_messages(bot_username2, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 @diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات العرب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -1104,7 +1104,7 @@ async def OwnerStart(event):
     await msg1[0].click(5)
     sleep(2)
     msg = await diyar.get_messages(bot_username3, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 @diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات برليون'))
 async def OwnerStart(event):
     sender = await event.get_sender()
@@ -1115,7 +1115,7 @@ async def OwnerStart(event):
     await msg1[0].click(5)
     sleep(2)
     msg = await diyar.get_messages(bot_username4, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 
 @diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات اسيا'))
 async def OwnerStart(event):
@@ -1127,7 +1127,7 @@ async def OwnerStart(event):
     await msg1[0].click(5)
     sleep(2)
     msg = await diyar.get_messages(bot_username5, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 
 @diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات هايبر'))
 async def OwnerStart(event):
@@ -1157,7 +1157,7 @@ async def OwnerStart(event):
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerdiyar_id:
-        dialogs = await abbas.get_dialogs()
+        dialogs = await diyar.get_dialogs()
         for dialog in dialogs:
             if dialog.is_channel:
                 await diyar(LeaveChannelRequest(dialog.entity))
@@ -1269,7 +1269,7 @@ async def OwnerStart(event):
         chn = event.pattern_match.group(1)
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
-        wait = await diyar.send_message(onerabbas_id,'**⚝ حسناً سوف اقوم بالانضمام والتصويت**')
+        wait = await diyar.send_message(onerdiyar_id,'**⚝ حسناً سوف اقوم بالانضمام والتصويت**')
         haso = await diyar.get_entity(chn)
         join = await diyar(JoinChannelRequest(chn))
         joion = await diyar(JoinChannelRequest('Sourcediyar'))
@@ -1300,7 +1300,7 @@ async def get_account_info(event):
     
     if sender.id == onerdiyar_id:
         # الحصول على معلومات الحساب
-        me = await abbas.get_me()
+        me = await diyar.get_me()
         
         if me:
             name = me.first_name
