@@ -36,7 +36,7 @@ import requests
 import random
 APP_ID =15179868
 APP_HASH='5eed1d89e639551bd74d736037ebd4f9'
-#bot_token='6525713076:AAHnKy7bq69iS-hmJ2ZhdxX15MKXrujoP9A'
+bot_token='6525713076:AAHnKy7bq69iS-hmJ2ZhdxX15MKXrujoP9A'
 diyar=TelegramClient('bot', APP_ID, APP_HASH)
 diyar.start()
 a = requests.session()
