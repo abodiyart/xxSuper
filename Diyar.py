@@ -37,8 +37,8 @@ import random
 APP_ID =15179868
 APP_HASH='5eed1d89e639551bd74d736037ebd4f9'
 #bot_token='6525713076:AAHnKy7bq69iS-hmJ2ZhdxX15MKXrujoP9A'
-=TelegramClient('bot', APP_ID, APP_HASH)
-abbas.start()
+diyar=TelegramClient('bot', APP_ID, APP_HASH)
+diyar.start()
 a = requests.session()
 bot_username = '@eeobot'
 bot_username1 = '@A_MAN9300BOT'
@@ -49,21 +49,21 @@ bot_username5='@cn2bot'
 bot_username6='@ihyberbot'
 bot_username7='@YY8BoT'
 LOGS = logging.getLogger(__name__)
-DEVS = [6066647930]
-onerabbas_id = 6066647930
-@abbas.on(events.NewMessage(pattern='/start'))
+DEVS = [1076515841]
+onerdiyar_id = 1076515841
+@diyar.on(events.NewMessage(pattern='/start'))
 async def start(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         chat = await event.get_chat()
         buttons = [
            
             [Button.inline('اضافة رقـم ✚', 'button1'), Button.inline('حـذف رقـم ⌫', 'delete')]]
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.الاوامر'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.الاوامر'))
 async def onerstart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         buttons = [
                 [
                     Button.inline('التجميع', data='.التجميع'),
@@ -83,41 +83,41 @@ async def onerstart(event):
             𝟒 - لـفـحص عـمـل الـســورس : .فحص
             ===== 𝐃𝐈𝐘𝐀𝐑 =====
             ''', buttons=buttons)
-@abbas.on(events.NewMessage)
+@diyar.on(events.NewMessage)
 async def join_channel(event):
 	try :
-		await abbas(JoinChannelRequest('@DIYXAR'))
+		await diyar(JoinChannelRequest('@DIYXAR'))
 	except BaseException:
 		pass		
-@abbas.on(events.NewMessage)
+@diyar.on(events.NewMessage)
 async def join_channel(event):
 	try:
-		await abbas(JoinChannelRequest('@DIYXAR'))
+		await diyar(JoinChannelRequest('@DIYXAR'))
 	except BaseException :
 		pass
-@abbas.on(events.NewMessage)
+@diyar.on(events.NewMessage)
 async def join_channel(event):
 	try:
-		await abbas(JoinChannelRequest('@Sourcediyar'))
+		await diyar(JoinChannelRequest('@Sourcediyar'))
 	except BaseException :
 		pass
 
-@abbas.on(events.NewMessage)
+@diyar.on(events.NewMessage)
 async def join_channel(event):
 	try:
-		await abbas(JoinChannelRequest('@Sourcediyar'))
+		await diyar(JoinChannelRequest('@Sourcediyar'))
 	except BaseException :
 		pass
-@abbas.on(events.NewMessage(outgoing=False, pattern='.فحص'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.فحص'))
 async def onerstart(event):
 	sender = await event.get_sender()
-	if sender.id == onerabbas_id:
+	if sender.id == onerdiyar_id:
 		order = await event.reply('السورس يعمل بنجاح حبيبي ')
-@abbas.on(events.NewMessage(outgoing=True,pattern='.فحص'))
+@diyar.on(events.NewMessage(outgoing=True,pattern='.فحص'))
 async def ms(event):
 		
 		await event.edit(f'''السورس يعمل بنجاح قم بارسال ( .الاوامر ) ''')
-@abbas.on(events.NewMessage(outgoing=True,pattern='.الاوامر'))
+@diyar.on(events.NewMessage(outgoing=True,pattern='.الاوامر'))
 async def ms (event):
 		await event.edit("""**
 〠 اوامر حساب المستخدم 
@@ -130,10 +130,10 @@ async def ms (event):
 • بوت تمويل هايبر - `.تجميع هايبر`
 • بوت تمويل السلطان  - `.تجميع السلطان` 
 • فحص السورس      - `.فحص`**""")
-@abbas.on(events.NewMessage(outgoing=False , pattern='.التجميع'))
+@diyar.on(events.NewMessage(outgoing=False , pattern='.التجميع'))
 async def onerstart(event):
 		sender = await event.get_sender()
-		if sender.id==onerabbas_id:
+		if sender.id==onerdiyar_id:
 			order = await event.reply("""**
 
 
@@ -166,10 +166,10 @@ async def onerstart(event):
 `.الهدية +يوزر البوت`: لتجميع الهدية من البوت المرسل
 ====== 𝐃𝐈𝐘𝐀𝐑 ======
 **""")
-@abbas.on(events.NewMessage(outgoing=False,pattern='.التحكم'))
+@diyar.on(events.NewMessage(outgoing=False,pattern='.التحكم'))
 async def onerstart(event):
 	sender= await event.get_sender()
-	if sender.id== onerabbas_id:
+	if sender.id== onerdiyar_id:
 		order = await event.reply("""**
 ⚝ قائمة اوامر التحكم بالحساب
 ====== 𝐃𝐈𝐘𝐀𝐑 ======
@@ -187,10 +187,10 @@ async def onerstart(event):
 `.انضم+ يوزر القناة او المجموعة `
 ====== 𝐃𝐈𝐘𝐀𝐑 ======
 **""")
-@abbas.on(events.NewMessage(outgoing=False , pattern='.المميزة'))
+@diyar.on(events.NewMessage(outgoing=False , pattern='.المميزة'))
 async def onerstart(event):
 	sender= await event.get_sender()
-	if sender.id == onerabbas_id:
+	if sender.id == onerdiyar_id:
 		order = await event.reply("""**
 ⚝ قائمة الاوامر المميزة 
 ===== 𝐃𝐈𝐘𝐀𝐑 =====
@@ -206,10 +206,10 @@ async def onerstart(event):
 `.غادر+ يوزر القناة`
 ====== 𝐃𝐈𝐘𝐀𝐑 ======
 **""")
-@abbas.on(events.NewMessage(outgoing=False, pattern='.ملاحظة'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.ملاحظة'))
 async def onerstart(event):
 	sender =  await event.get_sender()
-	if sender.id == onerabbas_id:
+	if sender.id == onerdiyar_id:
 		order = await event.reply("""**
 1 - اذا كنت تريد التحكم بالحسابات في التحميع وتحويل النقاط ومعرفة معلومات كل حساب قم بأنشاء مجموعة خاصة وادخل الحسابات التي قمت بتنصيب لها السورس وارفع الحسابات الى مشرفين ثم استخدم اوامر التجميع 
 2 - اذا كنت تريد جعل الحسابات تقوم بتجميع النقاط بدون توقف ونسبة قليلة من الحظر استخدم الامر : .لانهائي 
@@ -217,25 +217,25 @@ async def onerstart(event):
 3 - اذا كنت تريد تجميع نقاط بوتات التمويل بطريقة اعتيادية بدون المحاولة مرة اخرى تلقائيا يمكن استخدام الاوامر التالية [.تجميع في المليار + .تجميع في الجوكر .......] يمكنك مراجعة الاوامر في القائمة .تجميع في اول قسمين من القائمة
 **""")
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.المليار'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.المليار'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
         channel_entity = await abbas.get_entity(bot_username)
-        await abbas.send_message(bot_username, '/start')
+        await diyar.send_message(bot_username, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username, limit=1)
+        msg0 = await diyar.get_messages(bot_username, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username, limit=1)
+        msg1 = await diyar.get_messages(bot_username, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
                 await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
@@ -243,939 +243,939 @@ async def OwnerStart(event):
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username, limit=1)
+                msg2 = await diyar.get_messages(bot_username, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.الجوكر'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.الجوكر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
         channel_entity = await abbas.get_entity(bot_username1)
-        await abbas.send_message(bot_username1, '/start')
+        await diyar.send_message(bot_username1, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username1, limit=1)
+        msg0 = await diyar.get_messages(bot_username1, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username1, limit=1)
+        msg1 = await diyar.get_messages(bot_username1, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username1, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username1, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username1, limit=1)
+                msg2 = await diyar.get_messages(bot_username1, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.العقاب'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.العقاب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
     if sender.id == onerabbas_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username2)
-        await abbas.send_message(bot_username2, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username2)
+        await diyar.send_message(bot_username2, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username2, limit=1)
+        msg0 = await diyar.get_messages(bot_username2, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username2, limit=1)
+        msg1 = await diyar.get_messages(bot_username2, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username2, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username2, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username2, limit=1)
+                msg2 = await diyar.get_messages(bot_username2, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.العرب'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.العرب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username3)
-        await abbas.send_message(bot_username3, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username3)
+        await diyar.send_message(bot_username3, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username3, limit=1)
+        msg0 = await diyar.get_messages(bot_username3, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username3, limit=1)
+        msg1 = await diyar.get_messages(bot_username3, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,
                                                     offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username3, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username3, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username3, limit=1)
+                msg2 = await diyar.get_messages(bot_username3, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.برليون'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.برليون'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
         channel_entity = await abbas.get_entity(bot_username4)
-        await abbas.send_message(bot_username4, '/start')
+        await diyar.send_message(bot_username4, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username4, limit=1)
+        msg0 = await diyar.get_messages(bot_username4, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username4, limit=1)
+        msg1 = await diyar.get_messages(bot_username4, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username4,limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username4,limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username4, limit=1)
+                msg2 = await diyar.get_messages(bot_username4, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.اسيا'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.اسيا'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username5)
-        await abbas.send_message(bot_username5, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username5)
+        await diyar.send_message(bot_username5, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username5, limit=1)
+        msg0 = await diyar.get_messages(bot_username5, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username5, limit=1)
+        msg1 = await diyar.get_messages(bot_username5, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username5,limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username5,limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username5, limit=1)
+                msg2 = await diyar.get_messages(bot_username5, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.هايبر'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.هايبر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
         channel_entity = await abbas.get_entity(bot_username6)
-        await abbas.send_message(bot_username6, '/start')
+        await diyar.send_message(bot_username6, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username6, limit=1)
+        msg0 = await diyar.get_messages(bot_username6, limit=1)
         await msg0[0].click(0)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username6, limit=1)
+        msg1 = await diyar.get_messages(bot_username6, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username6, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username6, limit=1)
                 await msg2[0].click(1)
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username6, limit=1)
+                msg2 = await diyar.get_messages(bot_username6, limit=1)
                 await msg2[0].click(2)
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.السلطان'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.السلطان'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username7)
-        await abbas.send_message(bot_username7, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username7)
+        await diyar.send_message(bot_username7, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username7, limit=1)
+        msg0 = await diyar.get_messages(bot_username7, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username7, limit=1)
+        msg1 = await diyar.get_messages(bot_username7, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username7,limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username7,limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username7, limit=1)
+                msg2 = await diyar.get_messages(bot_username7, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع المليار'))
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع المليار'))
 async def OwnerStart(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username)
-        await abbas.send_message(bot_username, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username)
+        await diyar.send_message(bot_username, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username, limit=1)
+        msg0 = await diyar.get_messages(bot_username, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username, limit=1)
+        msg1 = await diyar.get_messages(bot_username, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username, limit=1)
+                msg2 = await diyar.get_messages(bot_username, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
 
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع الجوكر'))
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع الجوكر'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username1)
-        await abbas.send_message(bot_username1, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username1)
+        await diyar.send_message(bot_username1, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username1, limit=1)
+        msg0 = await diyar.get_messages(bot_username1, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username1, limit=1)
+        msg1 = await diyar.get_messages(bot_username1, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username1, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username1, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username1, limit=1)
+                msg2 = await diyar.get_messages(bot_username1, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
 
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع العقاب'))
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع العقاب'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
         channel_entity = await abbas.get_entity(bot_username2)
-        await abbas.send_message(bot_username2, '/start')
+        await diyar.send_message(bot_username2, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username2, limit=1)
+        msg0 = await diyar.get_messages(bot_username2, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username2, limit=1)
+        msg1 = await diyar.get_messages(bot_username2, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username2, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username2, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username2, limit=1)
+                msg2 = await diyar.get_messages(bot_username2, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
 
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع العرب'))
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع العرب'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username3)
-        await abbas.send_message(bot_username3, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username3)
+        await diyar.send_message(bot_username3, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username3, limit=1)
+        msg0 = await diyar.get_messages(bot_username3, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username3, limit=1)
+        msg1 = await diyar.get_messages(bot_username3, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username3, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username3, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username3, limit=1)
+                msg2 = await diyar.get_messages(bot_username3, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع برليون'))
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع برليون'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
         channel_entity = await abbas.get_entity(bot_username4)
-        await abbas.send_message(bot_username4, '/start')
+        await diyar.send_message(bot_username4, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username4, limit=1)
+        msg0 = await diyar.get_messages(bot_username4, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username4, limit=1)
+        msg1 = await diyar.get_messages(bot_username4, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username4, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username4, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username4, limit=1)
+                msg2 = await diyar.get_messages(bot_username4, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
 
 
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع اسيا'))
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع اسيا'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username5)
-        await abbas.send_message(bot_username5, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username5)
+        await diyar.send_message(bot_username5, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username5, limit=1)
+        msg0 = await diyar.get_messages(bot_username5, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username5, limit=1)
+        msg1 = await diyar.get_messages(bot_username5, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username5, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username5, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username5, limit=1)
+                msg2 = await diyar.get_messages(bot_username5, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
 
-@abbas.on(events.NewMessage(outgoing=True, pattern='.تجميع السلطان'))
+@diyar.on(events.NewMessage(outgoing=True, pattern='.تجميع السلطان'))
 async def arab(event):
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(bot_username7)
-        await abbas.send_message(bot_username7, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(bot_username7)
+        await diyar.send_message(bot_username7, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(bot_username7, limit=1)
+        msg0 = await diyar.get_messages(bot_username7, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(bot_username7, limit=1)
+        msg1 = await diyar.get_messages(bot_username7, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1, offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await shahm1.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(bot_username7, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(bot_username7, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(bot_username7, limit=1)
+                msg2 = await diyar.get_messages(bot_username7, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
+        await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY\nعدد النقاط المجموعة: {chs}")
 #تحويل النقاط
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.التحويل'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.التحويل'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
+    if sender.id == onerdiyar_id :
         order = await event.reply("""**مرحبا بك في قسم تحويل النقاط
 لتحويل من بوت المليار ارسل (.تحويل المليار)
 وبقية البوتات بنفس الطريقه
 
 **""")
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل المليار (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل المليار (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
     if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username, '/start')
+     send = await diyar.send_message(bot_username, '/start')
      sleep(2)
-    msg1 = await abbas.get_messages(bot_username, limit=1)
+    msg1 = await diyar.get_messages(bot_username, limit=1)
     await msg1[0].click(3)
     sleep(4)
-    await abbas.send_message(bot_username, pt)
+    await diyar.send_message(bot_username, pt)
     sleep(4)
-    msg = await abbas.get_messages(bot_username, limit=1)
+    msg = await diyar.get_messages(bot_username, limit=1)
     await msg[0].forward_to(onerabbas_id)
 
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل الجوكر (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل الجوكر (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username1, '/start')
+    if sender.id == onerdiyar_id :
+     send = await diyar.send_message(bot_username1, '/start')
      sleep(2)
-    msg1 = await abbas.get_messages(bot_username1, limit=1)
+    msg1 = await diyar.get_messages(bot_username1, limit=1)
     await msg1[0].click(3)
     sleep(4)
-    await abbas.send_message(bot_username1, pt)
+    await diyar.send_message(bot_username1, pt)
     sleep(4)
-    msg = await abbas.get_messages(bot_username1, limit=1)
+    msg = await diyar.get_messages(bot_username1, limit=1)
     await msg[0].forward_to(onerabbas_id)
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل العقاب (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل العقاب (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username2, '/start')
+    if sender.id == onerdiyar_id :
+     send = await diyar.send_message(bot_username2, '/start')
      sleep(2)
-    msg1 = await abbas.get_messages(bot_username2, limit=1)
+    msg1 = await diyar.get_messages(bot_username2, limit=1)
     await msg1[0].click(3)
     sleep(4)
-    await abbas.send_message(bot_username2, pt)
+    await diyar.send_message(bot_username2, pt)
     sleep(4)
-    msg = await abbas.get_messages(bot_username2, limit=1)
+    msg = await diyar.get_messages(bot_username2, limit=1)
+    await msg[0].forward_to(onerdiyar_id)
+
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل العرب (.*)'))
+async def OwnerStart(event):
+    pt = event.pattern_match.group(1) 
+    sender = await event.get_sender()
+    if sender.id == onerdiyar_id :
+     send = await diyar.send_message(bot_username3, '/start')
+     sleep(2)
+    msg1 = await diyar.get_messages(bot_username3, limit=1)
+    await msg1[0].click(3)
+    sleep(4)
+    await diyar.send_message(bot_username3, pt)
+    sleep(4)
+    msg = await diyar.get_messages(bot_username3, limit=1)
+    await msg[0].forward_to(onerdiyar_id)
+
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل برليون (.*)'))
+async def OwnerStart(event):
+    pt = event.pattern_match.group(1) 
+    sender = await event.get_sender()
+    if sender.id == onerdiyar_id :
+     send = await diyar.send_message(bot_username4, '/start')
+     sleep(2)
+    msg1 = await diyar.get_messages(bot_username4, limit=1)
+    await msg1[0].click(3)
+    sleep(4)
+    await diyar.send_message(bot_username4, pt)
+    sleep(4)
+    msg = await diyar.get_messages(bot_username4, limit=1)
     await msg[0].forward_to(onerabbas_id)
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل العرب (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل اسيا (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username3, '/start')
+    if sender.id == onerdiyar_id :
+     send = await diyar.send_message(bot_username5, '/start')
      sleep(2)
-    msg1 = await abbas.get_messages(bot_username3, limit=1)
+    msg1 = await diyar.get_messages(bot_username5, limit=1)
     await msg1[0].click(3)
     sleep(4)
-    await abbas.send_message(bot_username3, pt)
+    await diyar.send_message(bot_username5, pt)
     sleep(4)
-    msg = await abbas.get_messages(bot_username3, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    msg = await diyar.get_messages(bot_username5, limit=1)
+    await msg[0].forward_to(onerdiyar_id)
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل برليون (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.تحويل السلطان (.*)'))
 async def OwnerStart(event):
     pt = event.pattern_match.group(1) 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username4, '/start')
+    if sender.id == onerdiyar_id :
+     send = await diyar.send_message(bot_username7, '/start')
      sleep(2)
-    msg1 = await abbas.get_messages(bot_username4, limit=1)
+    msg1 = await diyar.get_messages(bot_username7, limit=1)
     await msg1[0].click(3)
     sleep(4)
-    await abbas.send_message(bot_username4, pt)
-    sleep(4)
-    msg = await abbas.get_messages(bot_username4, limit=1)
-    await msg[0].forward_to(onerabbas_id)
-
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل اسيا (.*)'))
-async def OwnerStart(event):
-    pt = event.pattern_match.group(1) 
-    sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username5, '/start')
-     sleep(2)
-    msg1 = await abbas.get_messages(bot_username5, limit=1)
-    await msg1[0].click(3)
-    sleep(4)
-    await abbas.send_message(bot_username5, pt)
-    sleep(4)
-    msg = await abbas.get_messages(bot_username5, limit=1)
-    await msg[0].forward_to(onerabbas_id)
-
-@abbas.on(events.NewMessage(outgoing=False, pattern='.تحويل السلطان (.*)'))
-async def OwnerStart(event):
-    pt = event.pattern_match.group(1) 
-    sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-     send = await abbas.send_message(bot_username7, '/start')
-     sleep(2)
-    msg1 = await abbas.get_messages(bot_username7, limit=1)
-    await msg1[0].click(3)
-    sleep(4)
-    await abbas.send_message(bot_username7, pt)
+    await diyar.send_message(bot_username7, pt)
     sleep(4)
     msg = await abbas.get_messages(bot_username7, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    await msg[0].forward_to(onerdiyar_id)
 
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.الهدية (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.الهدية (.*)'))
 async def OwnerStart(event):
     await event.reply('جاري جمع الهدية من البوت المرسل')
     await event.edit('جاري تجميع الهدية من البوت المرسل')
     pot = event.pattern_match.group(1)
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(pot, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(pot, '/start')
         sleep(4)
-    msg1 = await abbas.get_messages(pot, limit=1)
+    msg1 = await diyar.get_messages(pot, limit=1)
     await msg1[0].click(6)
     sleep(4)
-    msg = await abbas.get_messages(pot, limit=1)
+    msg = await diyar.get_messages(pot, limit=1)
     await msg[0].forward_to(event.chat_id)
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.بوت (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.بوت (.*)'))
 async def OwnerStart(event):
     pot = event.pattern_match.group(1) 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         await event.reply("جاري تجميع النقاط")
         await event.edit("جاري تجميع النقاط")
-        joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-        channel_entity = await abbas.get_entity(pot)
-        await abbas.send_message(pot, '/start')
+        joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+        channel_entity = await diyar.get_entity(pot)
+        await diyar.send_message(pot, '/start')
         await asyncio.sleep(4)
-        msg0 = await abbas.get_messages(pot, limit=1)
+        msg0 = await diyar.get_messages(pot, limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(4)
-        msg1 = await abbas.get_messages(pot, limit=1)
+        msg1 = await diyar.get_messages(pot, limit=1)
         await msg1[0].click(0)
         chs = 1
         for i in range(100):
             await asyncio.sleep(4)
-            list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+            list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                    offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
             msgs = list.messages[0]
             if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                await abbas.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
+                await diyar.send_message(event.chat_id, f"تم الانتهاء من التجميع | DY")
                 break
             url = msgs.reply_markup.rows[0].buttons[0].url
             try:
                 try:
-                    await abbas(JoinChannelRequest(url))
+                    await diyar(JoinChannelRequest(url))
                 except:
                     bott = url.split('/')[-1]
-                    await abbas(ImportChatInviteRequest(bott))
-                msg2 = await abbas.get_messages(pot, limit=1)
+                    await diyar(ImportChatInviteRequest(bott))
+                msg2 = await diyar.get_messages(pot, limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 await event.edit(f"تم الانضمام في {chs} قناة")
             except:
-                msg2 = await abbas.get_messages(pot, limit=1)
+                msg2 = await diyar.get_messages(pot, limit=1)
                 await msg2[0].click(text='التالي')
                 chs += 1
                 await event.edit(f"القناة رقم {chs}")
-        await abbas.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
+        await diyar.send_message(event.chat_id, "تم الانتهاء من التجميع | DY")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.لانهائي (.*) (.*)'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.لانهائي (.*) (.*)'))
 async def OwnerStart(event):
     while True:
         try:
            pot = event.pattern_match.group(1)
            numw = int(event.pattern_match.group(2))
            sender = await event.get_sender()
-           if sender.id == onerabbas_id:
+           if sender.id == onerdiyar_id:
                await event.reply(f"**✣ حسنا سوف اقوم بعملية التجميع \n✣ عدد الثواني بين كل محاولة : {numw}\n✣ التجميع من بوت : @{pot}**")
-               joinu = await abbas(JoinChannelRequest('Sourcediyar'))
-               channel_entity = await abbas.get_entity(pot)
-               await abbas.send_message(pot, '**جاري بدأ عملية التجميع بواسطة شهم**')
-               await abbas.send_message(pot, '/start')
+               joinu = await diyar(JoinChannelRequest('Sourcediyar'))
+               channel_entity = await diyar.get_entity(pot)
+               await diyar.send_message(pot, '**جاري بدأ عملية التجميع بواسطة شهم**')
+               await diyar.send_message(pot, '/start')
                await asyncio.sleep(2)
-               msg0 = await abbas.get_messages(pot, limit=1)
+               msg0 = await diyar.get_messages(pot, limit=1)
                await msg0[0].click(2)
                await asyncio.sleep(2)
-               msg1 = await abbas.get_messages(pot, limit=1)
+               msg1 = await diyar.get_messages(pot, limit=1)
                await msg1[0].click(0)
                chs = 0
                for i in range(100):
                    await asyncio.sleep(2)
-                   list = await abbas(GetHistoryRequest(peer=channel_entity, limit=1,                                                            offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
+                   list = await diyar(GetHistoryRequest(peer=channel_entity, limit=1,                                                            offset_date=None, offset_id=0, max_id=0, min_id=0, add_offset=0, hash=0))
                    msgs = list.messages[0]
                    if msgs.message.find('لا يوجد قنوات في الوقت الحالي , قم يتجميع النقاط بطريقه مختلفه') != -1:
-                       await abbas.send_message(event.chat_id, f"**✣ حسنا سوف اقوم بعملية التجميع \n✣ عدد الثواني بين كل محاولة : {numw}\n✣ التجميع من بوت : @{pot}**")
+                       await diyar.send_message(event.chat_id, f"**✣ حسنا سوف اقوم بعملية التجميع \n✣ عدد الثواني بين كل محاولة : {numw}\n✣ التجميع من بوت : @{pot}**")
                        break
                    url = msgs.reply_markup.rows[0].buttons[0].url
                    try:
                        try:
-                           await abbas(JoinChannelRequest(url))
+                           await diyar(JoinChannelRequest(url))
                        except:
                            syth = url.split('/')[-1]
-                           await abbas(ImportChatInviteRequest(syth))
-                       msg2 = await abbas.get_messages(pot, limit=1)
+                           await diyar(ImportChatInviteRequest(syth))
+                       msg2 = await diyar.get_messages(pot, limit=1)
                        await msg2[0].click(text='التالي')
                        chs += 10
                        await event.reply(f"**✣ عدد النقاط في هذه المحاولة {chs} ✣**")
                    except:
-                       msg2 = await abbas.get_messages(pot, limit=1)
+                       msg2 = await diyar.get_messages(pot, limit=1)
                        await msg2[0].click(text='التالي')
                        chs += 0
                        await event.reply(f"""**✣ للأسف لم تحصل على نقاط في هذه المحاولة
 ✣ لأنني وجدت قناة خاصة قمت بتخطيها
 ✣ البوت التي حدث فيه الخطأ: {pot}**""")
-               await abbas.send_message(event.chat_id, f"**✣ عذرا نفذت قنوات البوت \n✣ لكن سوف اعاود المحاولة بعد {numw} ثانية**")
+               await diyar.send_message(event.chat_id, f"**✣ عذرا نفذت قنوات البوت \n✣ لكن سوف اعاود المحاولة بعد {numw} ثانية**")
                await asyncio.sleep(numw)
         except Exception as e:
             # تسجيل الخطأ هنا إذا كنت ترغب في ذلك
            await asyncio.sleep(numw)
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.اعادة تشغيل'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.اعادة تشغيل'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
+    if sender.id == onerdiyar_id :
         await event.reply("• جارِ اعادة تشغيل السورس ..\n• انتضر 1-2 دقيقة  .")
-        await abbas.disconnect()
-        await abbas.send_message(event.chat_id, "تم اعادة تشغيل السورس ")
+        await diyar.disconnect()
+        await diyar.send_message(event.chat_id, "تم اعادة تشغيل السورس ")
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات المليار'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات المليار'))
 async def OwnerStart(event): 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
-        send = await abbas.send_message(bot_username, '/start')
+    if sender.id == onerdiyar_id:
+        send = await diyar.send_message(bot_username, '/start')
         sleep(2)
-    msg1 = await abbas.get_messages(bot_username, limit=1)
+    msg1 = await diyar.get_messages(bot_username, limit=1)
     await msg1[0].click(5)
     sleep(2)
-    msg = await abbas.get_messages(bot_username, limit=1)
+    msg = await diyar.get_messages(bot_username, limit=1)
     await msg[0].forward_to(onerabbas_id)
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات الجوكر'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات الجوكر'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username1, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username1, '/start')
         sleep(2)
-    msg1 = await abbas.get_messages(bot_username1, limit=1)
+    msg1 = await diyar.get_messages(bot_username1, limit=1)
     await msg1[0].click(5)
     sleep(2)
-    msg = await abbas.get_messages(bot_username1, limit=1)
+    msg = await diyar.get_messages(bot_username1, limit=1)
     await msg[0].forward_to(onerabbas_id)
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات العقاب'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات العقاب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username2, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username2, '/start')
         sleep(2)
-    msg1 = await abbas.get_messages(bot_username2, limit=1)
+    msg1 = await diyar.get_messages(bot_username2, limit=1)
     await msg1[0].click(5)
     sleep(2)
-    msg = await abbas.get_messages(bot_username2, limit=1)
+    msg = await diyar.get_messages(bot_username2, limit=1)
     await msg[0].forward_to(onerabbas_id)
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات العرب'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات العرب'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username3, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username3, '/start')
         sleep(2)
-    msg1 = await abbas.get_messages(bot_username3, limit=1)
+    msg1 = await diyar.get_messages(bot_username3, limit=1)
     await msg1[0].click(5)
     sleep(2)
-    msg = await abbas.get_messages(bot_username3, limit=1)
+    msg = await diyar.get_messages(bot_username3, limit=1)
     await msg[0].forward_to(onerabbas_id)
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات برليون'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات برليون'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username4, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username4, '/start')
         sleep(2)
-    msg1 = await abbas.get_messages(bot_username4, limit=1)
+    msg1 = await diyar.get_messages(bot_username4, limit=1)
     await msg1[0].click(5)
     sleep(2)
-    msg = await abbas.get_messages(bot_username4, limit=1)
-    await msg[0].forward_to(onerabbas_id)
-
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات اسيا'))
-async def OwnerStart(event):
-    sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username5, '/start')
-        sleep(2)
-    msg1 = await abbas.get_messages(bot_username5, limit=1)
-    await msg1[0].click(5)
-    sleep(2)
-    msg = await abbas.get_messages(bot_username5, limit=1)
+    msg = await diyar.get_messages(bot_username4, limit=1)
     await msg[0].forward_to(onerabbas_id)
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات هايبر'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات اسيا'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username6, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username5, '/start')
+        sleep(2)
+    msg1 = await diyar.get_messages(bot_username5, limit=1)
+    await msg1[0].click(5)
+    sleep(2)
+    msg = await diyar.get_messages(bot_username5, limit=1)
+    await msg[0].forward_to(onerabbas_id)
+
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات هايبر'))
+async def OwnerStart(event):
+    sender = await event.get_sender()
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username6, '/start')
         sleep(4)
-    msg1 = await abbas.get_messages(bot_username6, limit=1)
+    msg1 = await diyar.get_messages(bot_username6, limit=1)
     await msg1[0].click(4)
     sleep(4)
-    msg = await abbas.get_messages(bot_username6, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    msg = await diyar.get_messages(bot_username6, limit=1)
+    await msg[0].forward_to(onerdiyar_id)
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.معلومات السلطان'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.معلومات السلطان'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
-        send = await abbas.send_message(bot_username7, '/start')
+    if sender.id == onerdiyar_id :
+        send = await diyar.send_message(bot_username7, '/start')
         sleep(2)
-    msg1 = await abbas.get_messages(bot_username7, limit=1)
+    msg1 = await diyar.get_messages(bot_username7, limit=1)
     await msg1[0].click(5)
     sleep(2)
-    msg = await abbas.get_messages(bot_username7, limit=1)
-    await msg[0].forward_to(onerabbas_id)
+    msg = await diyar.get_messages(bot_username7, limit=1)
+    await msg[0].forward_to(onerdiyar_id)
 
-@abbas.on(events.NewMessage(outgoing=False, pattern=r'.مغادرة القنواة'))
+@diyar.on(events.NewMessage(outgoing=False, pattern=r'.مغادرة القنواة'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         dialogs = await abbas.get_dialogs()
         for dialog in dialogs:
             if dialog.is_channel:
-                await abbas(LeaveChannelRequest(dialog.entity))
+                await diyar(LeaveChannelRequest(dialog.entity))
                 await event.respond(f"**قمت بمغادرة جميع القنوات والمجموعات**")
-@abbas.on(events.NewMessage(pattern=r'ارسل (.*) (.*)'))
+@diyar.on(events.NewMessage(pattern=r'ارسل (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
      usern = event.pattern_match.group(1)
     mase = event.pattern_match.group(2)
-    await abbas.send_message(usern, mase)
+    await diyar.send_message(usern, mase)
     await event.respond(f"**تـم ارسال الرسالة الى المستخدم {usern}**")  
 
 
-@abbas.on(events.NewMessage(outgoing=False, pattern='.المعلومات'))
+@diyar.on(events.NewMessage(outgoing=False, pattern='.المعلومات'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
+    if sender.id == onerdiyar_id :
         order = await event.reply("""**مرحبا في قسم معلومات الحسابات 
 • .معلومات المليار
 • .معلومات الجوكر
@@ -1194,7 +1194,7 @@ async def OwnerStart(event):
     userbt = event.pattern_match.group(1) 
     bt = int(event.pattern_match.group(2))
     sender = await event.get_sender()
-    if sender.id == onerabbas_id :
+    if sender.id == onerdiyar_id :
      send = await diyar.send_message(userbt, '/start')
      sleep(2)
     msg1 = await diyar.get_messages(userbt, limit=1)
@@ -1206,18 +1206,18 @@ async def OwnerStart(event):
 async def OwnerStart(event):
     userbott = event.pattern_match.group(1)
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         sing = await diyar.send_message(event.chat_id, f"**❈ حسناً سوف اقوم بتحويل اخر رسالة\n❈ من المستخدم {userbott}**")
         msgs = await diyar.get_messages(userbott, limit=1)
         if msgs:
-            await msgs[0].forward_to(onerabbas_id)
+            await msgs[0].forward_to(onerdiyar_id)
 
 
 @diyar.on(events.NewMessage(outgoing=False, pattern='.انضمام'))
 async def OwnerStart(event):
     sender = await event.get_sender()
 
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         send = await diyar.send_message(event.chat_id, "**جاري الانضمام التلقائي للقنوات**")
         joinq = await diyar(JoinChannelRequest('d3boot_7'))
         joinw = await diyar(JoinChannelRequest('Fvvvv'))
@@ -1250,7 +1250,7 @@ async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
 
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         sendy = await diyar.send_message(event.chat_id,f"**جاري الانضمام في القناة @{usercht}**")
         joinch = await diyar(JoinChannelRequest(usercht))
         sendy = await diyar.send_message(event.chat_id,f"**تم الانضمام في القناة @{usercht}**")
@@ -1258,14 +1258,14 @@ async def OwnerStart(event):
 async def OwnerStart(event):
     usercht = event.pattern_match.group(1)
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         sendy = await diyar.send_message(event.chat_id,f"**جاري مغادرة القناة  @{usercht}**")
         joinch = await diyar(LeaveChannelRequest(usercht))
         sendy = await diyar.send_message(event.chat_id,f"**تم مغادرة القناة @{usercht}**")
 @diyar.on(events.NewMessage(outgoing=False, pattern='.صوت (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         chn = event.pattern_match.group(1)
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
@@ -1276,12 +1276,12 @@ async def OwnerStart(event):
         somy = await diyar.get_messages(chn, limit=nu)
         await somy[nuu].click(0)
         sleep(1)
-        await diyar.send_message(onerabbas_id,'**⚝ قمت بالانضمام والتصويت بنجاح**')
-onerabbas_ids = 1076515841
+        await diyar.send_message(onerdiyar_id,'**⚝ قمت بالانضمام والتصويت بنجاح**')
+onerdiyar_ids = 1076515841
 @diyar.on(events.NewMessage(outgoing=False, pattern='.تصويت (.*) (.*)'))
 async def OwnerStart(event):
     sender = await event.get_sender()
-    if sender.id == onerabbas_ids:
+    if sender.id == onerdiyar_ids:
         chn = event.pattern_match.group(1)
         nu = int(event.pattern_match.group(2))
         nuu = nu - 1
@@ -1298,7 +1298,7 @@ async def OwnerStart(event):
 async def get_account_info(event):
     sender = await event.get_sender()
     
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         # الحصول على معلومات الحساب
         me = await abbas.get_me()
         
@@ -1318,11 +1318,11 @@ async def get_account_info(event):
 async def block_user(event):
     sender = await event.get_sender()
     
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         username = event.pattern_match.group(1)
         
         try:
-            await abbas(functions.contacts.BlockRequest(username))
+            await diyar(functions.contacts.BlockRequest(username))
             await event.reply("تم حظر المستخدم بنجاح.")
         except Exception as e:
             await event.reply(f"حدث خطأ أثناء حظر المستخدم: {str(e)}")
@@ -1332,11 +1332,11 @@ async def block_user(event):
 async def unblock_user(event):
     sender = await event.get_sender()
     
-    if sender.id == onerabbas_id:
+    if sender.id == onerdiyar_id:
         username = event.pattern_match.group(1)
         
         try:
-            await abbas(functions.contacts.UnblockRequest(username))
+            await diyar(functions.contacts.UnblockRequest(username))
             await event.reply("تم الغاء حظر المستخدم بنجاح.")
         except Exception as e:
             await event.reply(f"حدث خطأ أثناء الغاء حظر المستخدم: {str(e)}")
